@@ -210,7 +210,7 @@ class RemoteLibraryClient {
         String[] parts = rawPayload.split("\\|");
         if (parts[0].equals("DATA")) {
             System.out.println("\n--- SYNCHRONIZED STORAGE SYSTEM INDEX ---");
-            for (int i = 1; i < parts.length; i++) {
+            for (int i = 2; i < parts.length; i++) {
                 System.out.println(" > " + parts[i]);
             }
         } else {
