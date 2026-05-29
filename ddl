@@ -220,7 +220,7 @@ class RemoteLibraryClient {
 }
 
 // ==========================================
-// 5. BOOTSTRAP SYSTEM RUNTIME CONTROL
+// 6. BOOTSTRAP SYSTEM RUNTIME CONTROL
 // ==========================================
 public class Main {
     public static void main(String[] args) throws InterruptedException {
