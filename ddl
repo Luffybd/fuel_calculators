@@ -233,7 +233,7 @@ public class Main {
             // Default: Spin up server thread and twin parallel client connections on a single JVM machine instantly for manual sandbox testing
             System.out.println("[SYSTEM] No boot mode specified. Initializing Local Mock Cluster Sandbox...");
             
-            Thread serverThread = new Thread(() -> new CentralLibraryServer().start());
+            Thread serverThread = new Thread(() -> new CentralLibraryServer().start(1));
             serverThread.start();
             
             // Allow thread scheduler a brief initialization slice
@@ -244,3 +244,4 @@ public class Main {
         }
     }
 };
+
